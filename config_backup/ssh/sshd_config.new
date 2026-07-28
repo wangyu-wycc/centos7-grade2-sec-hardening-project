@@ -1,0 +1,32 @@
+2、config_backup/ssh/sshd_config.new（加固后配置）
+ 
+plaintext
+  
+#       $OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:34 naddy Exp $
+
+Port 22022
+#ListenAddress 0.0.0.0
+
+#HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_ecdsa_key
+#HostKey /etc/ssh/ssh_host_ed25519_key
+
+LoginGraceTime 2m
+PermitRootLogin no
+StrictModes yes
+MaxAuthTries 3
+MaxSessions 10
+
+PubkeyAuthentication yes
+AuthorizedKeysFile	.ssh/authorized_keys
+
+PasswordAuthentication yes
+PermitEmptyPasswords no
+ChallengeResponseAuthentication yes
+UsePAM yes
+
+ClientAliveInterval 300
+ClientAliveCountMax 3
+
+AcceptEnv LANG LC_*
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
