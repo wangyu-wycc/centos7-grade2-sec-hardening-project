@@ -1,1 +1,1 @@
-# centos7-grade2-security-hardening
+# centos7-grade2-sec-hardening-project
