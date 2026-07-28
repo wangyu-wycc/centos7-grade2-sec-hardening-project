@@ -1,3 +1,5 @@
+3、config_backup/password/pwquality.conf.bak（密码复杂度配置）
+   
 # Password quality settings
 minlen = 8
 minclass = 3
