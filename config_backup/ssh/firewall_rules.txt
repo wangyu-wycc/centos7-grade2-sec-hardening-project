@@ -1,0 +1,13 @@
+4、config_backup/firewall/firewall_rules.txt（防火墙策略导出示例）
+  
+permanent:
+default zone: public
+interfaces:
+sources:
+services:
+ports: 22022/tcp
+protocols:
+forward-ports:
+source-ports:
+icmp-blocks:
+rich rules:
