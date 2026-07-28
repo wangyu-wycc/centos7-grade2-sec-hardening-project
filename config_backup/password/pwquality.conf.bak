@@ -1,0 +1,9 @@
+密码复杂度配置
+  
+# Password quality settings
+minlen = 8
+minclass = 3
+dcredit = -1
+ucredit = -1
+lcredit = -1
+ocredit = -1
