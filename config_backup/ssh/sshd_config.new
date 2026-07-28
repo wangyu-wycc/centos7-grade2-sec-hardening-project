@@ -1,4 +1,4 @@
-2、config_backup/ssh/sshd_config.new（加固后配置）
+加固后配置
  
   
 #       $OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:34 naddy Exp $
